@@ -280,7 +280,7 @@ $(function () {
   });
 
   var header = $("#header");
-  var backgrounds = ["img/banner-1.jpg", "img/banner-2.jpg"];
+  var backgrounds = ["img/banner-1.jpg", "img/banner-2.jpg", "img/banner-3.jpg"];
   var current = 0;
 
   function nextBackground() {
