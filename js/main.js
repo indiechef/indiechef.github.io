@@ -280,7 +280,7 @@ $(function () {
   });
 
   // Header images
-  var backgrounds = ["img/banner-1.jpg", "img/banner-4.jpg", "img/banner-2.jpg", "img/banner-3.jpg"];
+  var backgrounds = ["img/banner-1.jpg", "img/banner-4.jpg", "img/banner-5.jpg", "img/banner-2.jpg", "img/banner-3.jpg"];
   var current = 0;
 
   function nextBackground() {
