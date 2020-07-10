@@ -280,7 +280,7 @@ $(function () {
   });
 
   // Header images
-  var backgrounds = ["img/banner-1.jpg", "img/banner-2.jpg", "img/banner-3.jpg"];
+  var backgrounds = ["img/banner-1.jpg", "img/banner-4.jpg", "img/banner-2.jpg", "img/banner-3.jpg"];
   var current = 0;
 
   function nextBackground() {
@@ -289,8 +289,8 @@ $(function () {
         "url(" + backgrounds[(current = ++current % backgrounds.length)] + ")"
       );
 
-    setTimeout(nextBackground, 5000);
+    setTimeout(nextBackground, 7000);
   }
   
-  setTimeout(nextBackground, 5000);
+  setTimeout(nextBackground, 7000);
 });
