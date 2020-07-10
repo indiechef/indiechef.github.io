@@ -279,13 +279,11 @@ $(function () {
     });
   });
 
-  var header = $("#header");
+  // Header images
   var backgrounds = ["img/banner-1.jpg", "img/banner-2.jpg", "img/banner-3.jpg"];
   var current = 0;
 
   function nextBackground() {
-
-
     $('#header').css(
         "background-image",
         "url(" + backgrounds[(current = ++current % backgrounds.length)] + ")"
@@ -293,5 +291,6 @@ $(function () {
 
     setTimeout(nextBackground, 5000);
   }
+  
   setTimeout(nextBackground, 5000);
 });
