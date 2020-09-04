@@ -305,7 +305,7 @@ a:hover, a:active {
     color: rgba(255, 255, 255, 0.65); }
   .navbar .navbar-nav .nav-link.active {
     color: #fff;
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
     position: relative; }
 .navbar.nav-scroll .navbar-nav .nav-link:hover, .navbar.nav-scroll .navbar-nav .nav-link.active {
   color: #228B22; }
@@ -1755,7 +1755,7 @@ footer {
       margin-right: 0; }
     .footer-social li i {
       color: rgba(255, 255, 255, 0.65);
-      font-size: 18px; }
+      font-size: 48px; }
   .footer-social a:hover i {
     color: #fff; }
 
