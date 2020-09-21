@@ -1,466 +1,1165 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <!-- metas -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="author" content="IndieChef" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="keywords" content="indiechef, chef, independent, food, cooking" />
-    <meta name="description" content="IndieChef - Easy Menu Management & Order Fulfillment" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="keywords"
+      content="indiechef, chef, independent, food, cooking"
+    />
+    <meta
+      name="description"
+      content="IndieChef - Easy Menu Management & Order Fulfillment"
+    />
     <meta name="og:type" content="website" />
-    <meta name="og:title" content="IndieChef - Easy Menu Management & Order Fulfillment" />
-    <meta name="og:image" content="img/banner-logo.jpg" />
+    <meta
+      name="og:title"
+      content="IndieChef - Easy Menu Management & Order Fulfillment"
+    />
+    <meta
+      name="og:image"
+      content="https://assets.indiechef.io/site/img/banner-logo.jpg"
+    />
 
     <!-- title  -->
     <title>IndieChef - Easy Menu Management & Order Fulfillment</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="https://assets.indiechef.io/favicon.png" />
 
     <!-- plugins -->
     <link rel="stylesheet" href="css/plugins.css" />
 
+    <!-- revolution slider css -->
+    <link rel="stylesheet" href="css/rev_slider/settings.css" />
+    <link rel="stylesheet" href="css/rev_slider/layers.css" />
+    <link rel="stylesheet" href="css/rev_slider/navigation.css" />
+    <link rel="stylesheet" href="css/rev_slider/typewriter.css" />
+
     <!-- core style css -->
     <link rel="stylesheet" href="css/style.css" />
 
-</head>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <!-- start page loading -->
     <div id="preloader">
-        <div class="row loader">
-            <div class="loader-icon"></div>
-        </div>
+      <div class="row loader">
+        <div class="loader-icon"></div>
+      </div>
     </div>
     <!-- end page loading -->
 
     <!-- start header -->
-    <header id="header" class="header full-screen bg-img cover-background" data-overlay-dark="7" data-scroll-index="0" data-background="img/banner-1.jpg">
+    <header class="header full-screen no-padding-bottom" data-scroll-index="0">
+      <!-- start navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container sm-padding-10px-tb sm-padding-15px-lr">
+          <!-- start logo -->
+          <a class="logo" href="#!" data-scroll-nav="0">
+            <img
+              src="https://assets.indiechef.io/site/img/logo-white.png"
+              alt="IndieChef"
+              title="IndieChef"
+            />
+          </a>
+          <!-- end Logo -->
 
-        <!-- start navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container sm-padding-10px-tb sm-padding-15px-lr">
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar"></span>
+          </button>
 
-                <!-- start logo -->
-                <a class="logo" href="#!" data-scroll-nav="0">
-                    <img src="img/logo-light.png" alt="IndieChef - Easy Menu Management & Order Fulfillment" title="IndieChef - Easy Menu Management & Order Fulfillment">
-                </a>
-                <!-- end Logo -->
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="1">Find</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="2">How</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="3">Who</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="4">How Much?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="6">Contact</a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a
+                  class="nav-link"
+                  href="https://app.indiechef.io/users/sign_up"
+                  target="_blank"
+                  >Start Free</a
+                >
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a
+                  class="nav-link"
+                  href="https://app.indiechef.io/users/sign_in"
+                  target="_blank"
+                  >Sign In</a
+                >
+              </li>
+            </ul>
+            <a
+              href="https://app.indiechef.io/users/sign_up"
+              class="btn small fill margin-15px-left sm-display-none"
+              target="_blank"
+              >Start Free</a
+            >
+          </div>
+          <!-- end navbar links -->
+        </div>
+        <a href="#!" class="sidemenu_btn sm-display-none" id="sidebar_toggle">
+          <span></span> <span></span> <span></span>
+        </a>
+      </nav>
+      <!-- end navbar  -->
 
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                </button>
+      <!-- start video slideshow -->
+      <div
+        id="rev_slider_1014_1_wrapper"
+        class="rev_slider_wrapper fullscreen-container"
+        data-alias="typewriter-effect"
+        data-source="gallery"
+        style="background-color: transparent; padding: 0px"
+      >
+        <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
+        <div
+          id="rev_slider_1014_1"
+          class="rev_slider fullscreenbanner"
+          style="display: none"
+          data-version="5.4.1"
+        >
+          <ul>
+            <!-- SLIDE  -->
+            <li
+              data-index="rs-2800"
+              data-transition="slidingoverlayhorizontal"
+              data-slotamount="default"
+              data-hideafterloop="0"
+              data-hideslideonmobile="off"
+              data-easein="default"
+              data-easeout="default"
+              data-masterspeed="default"
+              data-rotate="0"
+              data-saveperformance="off"
+              data-title="Slide"
+              data-param1=""
+              data-param2=""
+              data-param3=""
+              data-param4=""
+              data-param5=""
+              data-param6=""
+              data-param7=""
+              data-param8=""
+              data-param9=""
+              data-param10=""
+              data-description=""
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="https://assets.indiechef.io/site/video/video-bg-img.jpg"
+                alt=""
+                data-bgposition="center center"
+                data-bgfit="cover"
+                class="rev-slidebg"
+                data-no-retina
+              />
+              <!-- LAYERS -->
 
-                <!-- navbar links -->
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#!" data-scroll-nav="0">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!" data-scroll-nav="1">How It Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!" data-scroll-nav="2">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!" data-scroll-nav="4">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!" data-scroll-nav="5">Our Chef's Work</a>
-                        </li>
-                        <li class="nav-item sm-display-block" style="display: none;">
-                            <a class="nav-link" href="https://app.indiechef.io/users/sign_in" target="_blank">Sign In</a>
-                        </li>
-                        <li class="nav-item sm-display-block" style="display: none;">
-                            <a class="nav-link" href="https://app.indiechef.io/users/sign_up" target="_blank">Start Free Now</a>
-                        </li>
-                    </ul>
-                    <a href="https://app.indiechef.io/users/sign_in" class="btn small fill margin-15px-left sm-display-none" target="_blank">Sign In</a>
-                    <a href="https://app.indiechef.io/users/sign_up" class="btn small fill margin-15px-left sm-display-none" target="_blank">Start Free</a>
-                </div>
-                <!-- end navbar links -->
+              <!-- BACKGROUND VIDEO LAYER -->
+              <div
+                class="rs-background-video-layer"
+                data-forcerewind="on"
+                data-volume="mute"
+                data-videowidth="100%"
+                data-videoheight="100%"
+                data-videomp4="https://assets.indiechef.io/site/video/bg-video.mp4"
+                data-videopreload="auto"
+                data-videoloop="loop"
+                data-forceCover="1"
+                data-aspectratio="16:9"
+                data-autoplay="true"
+                data-autoplayonlyfirsttime="false"
+              ></div>
+              <!-- LAYER NR. 1 -->
+              <div
+                class="tp-caption tp-shape tp-shapewrapper"
+                id="slide-2800-layer-7"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['0','0','0','0']"
+                data-width="full"
+                data-height="full"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-basealign="slide"
+                data-responsive_offset="off"
+                data-responsive="off"
+                data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"speed":5000,"to":"opacity:0;","ease":"Power4.easeInOut"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 5;
+                  background-color: rgba(0, 0, 0, 0.05);
+                  border-color: rgba(0, 0, 0, 0);
+                  border-width: 0px;
+                "
+              ></div>
 
-            </div>
-        </nav>
-        <!-- end navbar  -->
+              <!-- LAYER NR. 2 -->
+              <div
+                class="tp-caption tp-resizeme alt-font"
+                id="slide-2800-layer-1"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['-80','-80','-130','-100']"
+                data-fontsize="['112','112','90','72']"
+                data-lineheight="['130','130','100','80']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"from":"y:50px;sX:1;sY:1;opacity:0;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 6;
+                  white-space: nowrap;
+                  font-size: 130px;
+                  line-height: 130px;
+                  font-weight: 700;
+                  color: #fff;
+                  border-width: 0px;
+                  letter-spacing: -2px;
+                "
+              >
+                What's
+                <div class="d-block d-md-none"></div>
+                Cookin?
+              </div>
 
-        <div class="container d-flex flex-column">
-            <div class="row align-items-center justify-content-start min-vh-100 static-banner">
-                <div class="col-md-10 display-table h-100 z-index-1 width-100">
-                    <div class="display-table-cell vertical-align-middle">
-                        <div class="caption">
-                            <h1>Calling Independent Chefs!</h1>
-                            <p class="margin-30px-bottom lead width-65 md-width-75 xs-width-95 xs-font-size18">IndieChef is a simple &amp; easy platform for independent chefs to create menus, allow customers to order items, and fulfill orders.</p>
-                            <a href="#!" data-scroll-nav="1" class="btn fill">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <!-- LAYER NR. 4 -->
+              <div
+                class="tp-caption tp-resizeme"
+                id="slide-2800-layer-2"
+                data-x="['center','center','center','center']"
+                data-hoffset="['-10','-10','-10','-10']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['65','65','-8','40']"
+                data-fontsize="['40','40','30','30']"
+                data-width="['640','640','480','360']"
+                data-height="none"
+                data-whitespace="['nowrap','nowrap','normal','normal']"
+                data-type="text"
+                data-typewriter='{"lines":"Or anyone that likes to cook,Come be a part of something special!,Finally...,Order management is EASY!,We present to you...,IndieChef!","enabled":"on","speed":"60","delays":"1%7C100","looped":"on","cursorType":"one","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1500","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
+                data-responsive_offset="on"
+                data-frames='[{"from":"y:50px;sX:1;sY:1;opacity:0;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 8;
+                  min-width: 640px;
+                  max-width: 640px;
+                  white-space: nowrap;
+                  font-size: 40px;
+                  line-height: 40px;
+                  font-weight: 400;
+                  font-family: Georgia, serif;
+                  font-style: italic;
+                  border-width: 0px;
+                  color: #fff;
+                "
+              >
+                Calling all independent chefs...
+              </div>
+            </li>
+            <!-- SLIDE  -->
+          </ul>
+          <div
+            class="tp-bannertimer tp-bottom"
+            style="visibility: hidden !important"
+          ></div>
         </div>
 
-        <!-- start banner shape -->
-        <div class="banner-shape">
-            <img src="img/banner-shape.png" alt="" />
+        <div class="arrow">
+          <a href="javascript:void(0);" data-scroll-nav="1">
+            <i class="fas fa-chevron-down"></i>
+          </a>
         </div>
-        <!-- end banner shape -->
+      </div>
+      <!-- end video slideshow  -->
 
+      <!-- start sidemenu -->
+      <div class="side-menu black alt-font">
+        <div class="inner-wrapper">
+          <span class="btn-close" id="btn_sidebar_colse"></span>
+          <nav class="side-nav width-100">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#!" data-scroll-nav="0"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="1"
+                  >Find a Chef</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="2"
+                  >How it Works</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="3">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="4">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-scroll-nav="6">Contact</a>
+              </li>
+              <hr style="background-color: white" />
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://app.indiechef.io/users/sign_up"
+                  target="_blank"
+                  >Start Free</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://app.indiechef.io/users/sign_in"
+                  target="_blank"
+                  >Sign In</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="side-footer width-100">
+            <div class="social-links">
+              <a target="blank" href="https://www.facebook.com/IndieChef.io"
+                ><i class="fab fa-facebook-f fa-2x"></i
+              ></a>
+              <a target="blank" href="https://twitter.com/indiechef_"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+              <a target="blank" href="https://instagram.com/indiechef.io"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End sidemenu -->
+
+      <!-- close sidemenu -->
+      <a id="close_sidebar" href="#!"></a>
+      <!-- End Sidemenu -->
     </header>
     <!-- end header -->
 
-    <!-- start service section -->
-    <section data-scroll-index="1">
+    <section class="no-padding-top" data-scroll-index="1">
+      <div class="bg-theme" style="padding: 50px 0">
         <div class="container">
-            <div class="section-title">
-                <h2>How It Works</h2>
+          <div class="row justify-content-center">
+            <div
+              class="col-md-6 col-lg-7 xs-margin-20px-bottom text-center text-md-left text-white"
+            >
+              <h4 class="margin-5px-bottom sm-font-size22 text-white">
+                Find an IndieChef Near You!
+              </h4>
+              <p>
+                More and more IndieChefs are signing up everyday! Find one in
+                your area...
+              </p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-4 sm-margin-25px-bottom">
-                    <div class="service-block">
-                        <i class="ti-tablet font-size48 text-theme-color display-inline-block margin-20px-bottom"></i>
-                        <h3>Publish a Menu</h3>
-                        <p>Creating a menu is EASY!  Create and publish your menu so your customers can purchase your grub.  Includes images!</p>
+
+            <div class="col-md-6 col-lg-5">
+              <form
+                class="newsletter-form w-sm-90 mx-auto mx-lg-0"
+                id="find-chef-form"
+                action=""
+                method="post"
+                enctype="multipart/form-data"
+                onclick=""
+              >
+                <div>
+                  <div class="row">
+                    <!-- Begin Text input element -->
+                    <div class="col-md-12">
+                      <div>
+                        <div>
+                          <input
+                            class="form-control"
+                            id="find-chef-zip"
+                            type="text"
+                            name="zip"
+                            placeholder="Your zip code"
+                          />
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-md-10 col-lg-4 sm-margin-25px-bottom">
-                    <div class="service-block">
-                        <i class="ti-money font-size48 text-theme-color display-inline-block margin-20px-bottom"></i>
-                        <h3>Receive Orders</h3>
-                        <p>Sell your grub from your IndieChef page and integrate your menu with social media!</p>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Submit button -->
+                    <div class="col-md-12">
+                      <div class="quform-submit-inner">
+                        <button
+                          id="find-chef-button"
+                          class="btn btn-white text-theme-color m-0"
+                        >
+                          <i class="fas fa-paper-plane"></i>
+                        </button>
+                      </div>
                     </div>
+                    <!-- End Submit button -->
+                  </div>
                 </div>
-                <div class="col-md-10 col-lg-4">
-                    <div class="service-block">
-                        <i class="ti-bag font-size48 text-theme-color display-inline-block margin-20px-bottom"></i>
-                        <h3>Fulfill Order</h3>
-                        <p>Manage the order status and communicate with your customers.  IndieChef handles ALL of your small business needs!</p>
-                    </div>
-                </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- end service section -->
+
+    <!-- start services section -->
+    <section class="lg no-padding-top" data-scroll-index="2">
+      <div class="container">
+        <div class="section-title">
+          <span>How It Works</span>
+          <h5>
+            <strong>Our Goal:</strong> To allow you to manage your independent
+            cooking business in ONE place
+          </h5>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 sm-margin-30px-bottom text-center">
+            <div class="border padding-30px-all rounded h-100">
+              <i
+                class="fas fa-tablet-alt font-size50 text-theme-color margin-30px-bottom"
+              ></i>
+              <h4 class="font-size18">Publish your menu</h4>
+              <p class="no-margin-bottom line-height-30">
+                Creating a menu is EASY! Create and publish your menu so your
+                customers can purchase your grub. Includes images!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 sm-margin-30px-bottom text-center">
+            <div class="border padding-30px-all rounded h-100">
+              <i
+                class="fas fa-file-invoice-dollar font-size50 xs-font-size32 text-theme-color margin-30px-bottom"
+              ></i>
+              <h4 class="font-size18">Customers Purchase</h4>
+              <p class="no-margin-bottom line-height-30">
+                Sell your grub from your own IndieChef page and integrate your
+                menu with social media! No web experience required
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 xs-margin-30px-bottom text-center">
+            <div class="border padding-30px-all rounded h-100">
+              <i
+                class="fas fa-sync font-size50 text-theme-color margin-30px-bottom"
+              ></i>
+              <h4 class="font-size18">Order Fulfillment</h4>
+              <p class="no-margin-bottom line-height-30">
+                Manage the order status and communicate with your customers.
+                IndieChef handles ALL of your small business needs!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end services section -->
 
     <!-- start about section -->
-    <section class="padding-50px-top sm-padding-30px-top bg-light-gray" data-scroll-index="2">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 sm-margin-40px-bottom">
-                    <div class="position-relative">
-                        <img src="img/about.jpg" alt="" class="rounded" />
-                    </div>
 
-                    <!-- <a class="popup-youtube about-video" href="https://www.youtube.com/watch?v=f5BBJ4ySgpo">
-                        <span class="video_btn"><i class="fa fa-play small"></i></span>
-                    </a> -->
-
-                </div>
-                <div class="col-lg-6">
-                    <div class="padding-50px-left sm-no-padding-left">
-                        <h2 class="font-size34 md-font-size32 sm-font-size30 margin-30px-bottom">Our goal is to make being an independent chef EASY.</h2>
-                        <p class="margin-40px-bottom md-margin-30px-bottom xs-margin-20px-bottom">All too often, we see independent chef's being required to use huge platforms to manage their order fulfillment processes.  These systems are bulky and confusing.  Time for something simple!</p>
-
-                        <!-- start process section -->
-                        <div class="process-steps-xs">
-                            <ul class="left-holder row no-margin-bottom">
-                                <li class="col-6 col-md-3">
-                                    <div class="process-step-xs center-holder">
-                                        <div class="process-step-icon"><i class="ti-money"></i></div>
-                                        <h3>Menu</h3></div>
-                                </li>
-                                <li class="col-6 col-md-3">
-                                    <div class="process-step-xs center-holder">
-                                        <div class="process-step-icon"><i class="ti-wallet"></i></div>
-                                        <h3>Publish</h3></div>
-                                </li>
-                                <li class="col-6 col-md-3">
-                                    <div class="process-step-xs center-holder xs-no-margin-bottom">
-                                        <div class="process-step-icon"><i class="ti-briefcase"></i></div>
-                                        <h3>Purchase</h3></div>
-                                </li>
-                                <li class="col-6 col-md-3">
-                                    <div class="process-step-xs center-holder xs-no-margin-bottom">
-                                        <div class="process-step-icon"><i class="ti-light-bulb"></i></div>
-                                        <h3>Fulfill</h3></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- end process section -->
-                    </div>
-                </div>
-            </div>
-
+    <!-- start about section -->
+    <section class="no-padding-top" data-scroll-index="3">
+      <div class="container">
+        <div class="section-title">
+          <span>About</span>
         </div>
+        <div class="row justify-content-center sm-margin-70px-bottom">
+          <div class="col-lg-6 sm-text-center sm-margin-50px-bottom">
+            <div class="position-relative md-padding-20px-right">
+              <img
+                src="https://assets.indiechef.io/banner-4.jpg"
+                class="border-all border-width-5 border-color-white box-shadow-large"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-11 col-lg-6">
+            <div class="padding-30px-left sm-no-padding-left">
+              <h2
+                class="font-size28 xs-font-size26 margin-30px-bottom line-height-40"
+              >
+                We want you to constantly improve your business and personal
+                growth.
+              </h2>
+              <p class="font-size18 line-height-30 margin-30px-bottom">
+                All too often, we see independent chef's being required to use
+                huge platforms to manage their order fulfillment processes.
+                These systems are bulky and confusing. Time for something
+                simple!
+              </p>
+              <!-- <div class="horizontaltab tab-style">
+                <ul class="resp-tabs-list hor_1">
+                  <li>Our Vision</li>
+                  <li>Our Mission</li>
+                  <li>Our Value</li>
+                </ul>
+                <div class="resp-tabs-container hor_1">
+                  <div>
+                    <p class="no-margin-bottom">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="no-margin-bottom">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut fugit, sed quia consequuntur magni dolores
+                      eos qui ratione voluptatem sequi nesciunt. Neque porro
+                      quisquam est, qui dolorem ipsum quia dolor.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="no-margin-bottom">
+                      Excepteur sint occaecat cupidatat non proident, sunt in
+                      culpa qui officia deserunt mollit anim id est laborum. Sed
+                      ut perspiciatis unde omnis iste natus error sit voluptatem
+                      accusantium doloremque.
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end about section -->
 
-    <!-- start testimonial section -->
-    <section>
-        <div class="container">
-            <div class="testimonial-slider">
-                <div class="owl-carousel owl-theme">
-                    <div class="row">
-                        <div class="col-md-3 text-center xs-margin-15px-bottom">
-                            <div class="margin-30px-bottom xs-margin-15px-bottom">
-                                <img src="img/testimonial/t-1.jpg" class="rounded-circle" alt="" />
-                            </div>
-                            <h4>Justin Gwyn</h4>
-                            <span class="font-size14 font-weight-600">Owner - JGwyn's Kitchen</span>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="position-relative padding-90px-left sm-padding-70px-left xs-no-padding-left">
-                                <span class="qoute"><i class="fas fa-quote-left"></i></span>
-                                <p>When I started selling my dinner plates, I managed all my customer communication myself.  IndieChef has taken over that process and made my life so easy!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 text-center xs-margin-15px-bottom">
-                            <div class="margin-30px-bottom xs-margin-15px-bottom">
-                                <img src="img/testimonial/t-2.jpg" class="rounded-circle" alt="" />
-                            </div>
-                            <h4>Khalea Fields</h4>
-                            <span class="font-size14 font-weight-600">Owner - CooLea's Cupcakes</span>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="position-relative padding-90px-left sm-padding-70px-left xs-no-padding-left">
-                                <span class="qoute"><i class="fas fa-quote-left"></i></span>
-                                <p>I love that IndieChef handles my transactions and shows my analytics on my dashboard.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- start Price Section -->
+    <section
+      class="price bg-light-gray"
+      data-scroll-index="4"
+      data-overlay-dark="0"
+      data-background="https://assets.indiechef.io/site/img/bg-pattern.png"
+    >
+      <div class="container">
+        <div class="section-title">
+          <span>Pricing</span>
+          <h2>One Price. All Features</h2>
         </div>
+
+        <div class="row">
+          <!-- start table -->
+          <div
+            class="col-lg-4 offset-lg-4 sm-margin-30px-bottom wow fadeInRight"
+            data-wow-delay="0.4s"
+          >
+            <div class="item text-center active">
+              <div class="type">
+                <h4>IndieChef Plan</h4>
+              </div>
+              <div class="value">
+                <h3>10<span>$</span></h3>
+                <span class="per">Per Month</span>
+              </div>
+              <div class="features">
+                <ul>
+                  <li>Personal Page per Chef</li>
+                  <li>Easy Customer Shopping</li>
+                  <!-- <li>Embed Chef Page</li> -->
+                  <li>Data & Analytics</li>
+                  <li>Transactional Emails</li>
+                  <li>Social Media Integration</li>
+                  <li>Unlimited Menu</li>
+                  <li>Low Service Charge</li>
+                  <li>Customizations & More!</li>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="order">
+                <a href="https://app.indiechef.io/users/sign_up" class="btn" target="_blank">Start Free</a>
+              </div>
+            </div>
+          </div>
+          <!-- end table -->
+        </div>
+      </div>
+    </section>
+    <!-- end Price Section -->
+
+    <!-- start team section -->
+    <section class="lg" data-scroll-index="5">
+      <div class="container">
+        <div class="section-title">
+          <span>Featured IndieChefs</span>
+          <h2>Hands down, our IndieChefs are the BEST!</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-11 col-sm-6 col-md-5 col-lg-3 sm-margin-30px-bottom">
+            <div class="team-block">
+              <div class="image">
+                <img
+                  src="https://assets.indiechef.io/site/img/team/01.jpg"
+                  alt=""
+                />
+                <div
+                  class="team-hover text-center position-absolute text-white padding-30px-all"
+                >
+                  <div class="team-content margin-20px-bottom">
+                    <h4 class="font-size18 text-white no-margin-bottom">
+                      Justin Gwyn
+                    </h4>
+                    <span>J. Gwyn's Kitchen</span>
+                  </div>
+                  <div class="footer-social">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://app.indiechef.io/menu/j_gwyns_kitchen"
+                          target="_blank"
+                          style="margin-right: 16px;"
+                          ><i class="fas fa-utensils fa-2x text-white"></i
+                        ></a>
+                        <a
+                          href="https://www.instagram.com/jgwyn_kitchen"
+                          target="_blank"
+                          ><i class="fab fa-instagram fa-2x text-white"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-11 col-sm-6 col-md-5 col-lg-3 sm-margin-30px-bottom">
+            <div class="team-block">
+              <div class="image">
+                <img
+                  src="https://assets.indiechef.io/site/img/team/02.jpg"
+                  alt=""
+                />
+                <div
+                  class="team-hover text-center position-absolute text-white padding-30px-all"
+                >
+                  <div class="team-content margin-20px-bottom">
+                    <h4 class="font-size18 text-white no-margin-bottom">
+                      Khalea Fields
+                    </h4>
+                    <span>Cool Cakes</span>
+                  </div>
+                  <div class="footer-social">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://app.indiechef.io/menu/cool_cakes"
+                          target="_blank"
+                          style="margin-right: 16px;"
+                          ><i class="fas fa-utensils fa-2x text-white"></i
+                        ></a>
+                        <a
+                          href="https://www.instagram.com/coolx\cakes"
+                          target="_blank"
+                          ><i class="fab fa-instagram fa-2x text-white"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end team section -->
+
+    <!-- start testimonial section -->
+    <section
+      class="bg-img testimonial theme-overlay cover-background lg"
+      data-background="https://assets.indiechef.io/site/img/testimonial-bg.jpg"
+      data-overlay-dark="9"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="owl-carousel owl-theme">
+              <div>
+                <p>
+                  When I started selling my dinner plates, I managed all my
+                  customer communication myself. IndieChef has taken over that
+                  process and made my life so easy!
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="margin-15px-right width-50px">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="https://assets.indiechef.io/site/img/avatar/t-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h6 class="font-size18 text-white no-margin-bottom">
+                      Justin Gwyn
+                    </h6>
+                    <small class="text-white">J. Gwyn's Kitchen</small>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>
+                  I love that IndieChef handles my transactions and shows my
+                  analytics on my dashboard.
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="margin-15px-right width-50px">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="https://assets.indiechef.io/site/img/avatar/t-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h6 class="font-size18 text-white no-margin-bottom">
+                      Khalea Fields
+                    </h6>
+                    <small class="text-white">Cool Cakes</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end testimonial section -->
 
-    <!-- start pricing section -->
-    <section class="price bg-light-gray" data-scroll-index="4">
-        <div class="container">
+    <!-- start blog section -->
+    <section class="lg" data-scroll-index="6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-md-1">
+            <div
+              class="bg-light-gray padding-40px-all xs-padding-30px-all margin-50px-left md-margin-30px-left sm-no-margin-left rounded"
+            >
+              <h3
+                class="font-size28 sm-font-size26 margin-30px-bottom line-height-40"
+              >
+                Contact Us
+              </h3>
 
-            <div class="section-title">
-                <h2>Our Price</h2>
+              <!-- start form here -->
+
+              <form
+                id="contact-us-form"
+                action="https://app.indiechef.io/contact"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div>
+                  <div class="row">
+                    <!-- Begin Text input element -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <div>
+                          <input
+                            id="name"
+                            type="text"
+                            name="name"
+                            placeholder="Your name here *"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Text input element -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <div>
+                          <input
+                            id="email"
+                            type="text"
+                            name="email"
+                            placeholder="Your email here *"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Text input element -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <div>
+                          <input
+                            id="subject"
+                            type="text"
+                            name="subject"
+                            placeholder="Your subject here"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Text input element -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <div>
+                          <input
+                            id="phone"
+                            type="text"
+                            name="phone"
+                            placeholder="Your phone number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Textarea element -->
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <div>
+                          <textarea
+                            id="message"
+                            name="message"
+                            rows="3"
+                            placeholder="Tell us a few words *"
+                            required="required"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Textarea element -->
+
+                    <!-- Begin Submit button -->
+                    <div class="col-md-12">
+                      <div id="contact-us-submit-button-container">
+                        <button
+                          class="btn g-recaptcha"
+                          type="submit"
+                          data-sitekey="6LcHM8wZAAAAANKmAIbn-RuisU4uq2G5dR57vxHw"
+                          data-callback="onContactSubmit"
+                          data-action="submit"
+                        >
+                          <span>Submit Comment</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- End Submit button -->
+                  </div>
+                </div>
+              </form>
+
+              <!-- end form here -->
             </div>
-
-            <!-- start price section -->
-
-            <div class="row">
-                <!-- start table -->
-                <div class="col-lg-4 sm-margin-30px-bottom">
-                    <div class="item text-center">
-                        <div class="type">
-                            <h4>One Price!</h4>
-                        </div>
-                        <!-- <div class="value">
-                            <h3>10<span>$</span></h3>
-                            <span class="per">Per Month</span>
-                        </div> -->
-                        <div class="features">
-                            <ul>
-                                <li>24/7 Tech Support</li>
-                                <li>Chef Back Office</li>
-                                <li>Data & Analytics</li>
-                                <li>Unlimited Menu Items</li>
-                                <li>Unlimited Support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- end table -->
-
-                <!-- start table -->
-                <div class="col-lg-4 sm-margin-30px-bottom">
-                    <div class="item text-center active">
-                        <div class="type">
-                            <h4>IndieChef Plan</h4>
-                        </div>
-                        <div class="value">
-                            <h3>10<span>$</span></h3>
-                            <span class="per">Per Month</span>
-                        </div>
-                        <div class="features">
-                            <ul>
-                                <li>Personal Page per Chef</li>
-                                <li>Easy Customer Shopping</li>
-                                <li>Monthly Report</li>
-                                <li>Unlimited Storage (Images)</li>
-                                <li>Embed Chef Page</li>
-                            </ul>
-                        </div>
-                        <div class="order">
-                            <a href="https://app.indiechef.io/users/sign_up" class="btn fill small" target="_blank"><span>Start Free Now</span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end table -->
-
-                <!-- start table -->
-                <div class="col-lg-4">
-                    <div class="item text-center">
-                        <div class="type">
-                            <span class="icon"><i class="icofont icofont-diamond"></i></span>
-                            <h4>One Price!</h4>
-                        </div>
-                        <!-- <div class="value">
-                            <h3>10<span>$</span></h3>
-                            <span class="per">Per Month</span>
-                        </div> -->
-                        <div class="features">
-                            <ul>
-                                <li>Simple Interface</li>
-                                <li>Transaction Emails</li>
-                                <li>Pickup / Delivery Option</li>
-                                <li>Social Media Integration</li>
-                                <li>Integrated Merchant Services</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- end table -->
-            </div>
-
-            <!-- end price section -->
-
+          </div>
         </div>
+      </div>
     </section>
-    <!-- end pricing section -->
-
-    <!-- start portfolio section -->
-    <section data-scroll-index="5">
-        <div class="container padding-20px-tb">
-
-            <div class="section-title">
-                <h2>Featured IndieChefs</h2>
-            </div>
-
-            <div class="form-row gallery">
-                <div class="col-lg-4 col-sm-6 margin-8px-bottom">
-                    <div class="portfolio-block position-relative overflow-hidden">
-                        <img src="img/portfolio/01.jpg" alt="" />
-                        <div class="detail">
-                            <div class="content">
-                                <h5><a href="img/portfolio/01.jpg" class="popimg">Shrimp Tacos</a></h5>
-                                <small>JGwyn's Kitchen</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 margin-8px-bottom">
-                    <div class="portfolio-block position-relative overflow-hidden">
-                        <img src="img/portfolio/02.jpg" alt="" />
-                        <div class="detail">
-                            <div class="content">
-                                <h5><a href="img/portfolio/02.jpg" class="popimg">Carrot Cupcakes</a></h5>
-                                <small>Buckle Giarza</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 margin-8px-bottom">
-                    <div class="portfolio-block position-relative overflow-hidden">
-                        <img src="img/portfolio/03.jpg" alt="" />
-                        <div class="detail">
-                            <div class="content">
-                                <h5><a href="img/portfolio/03.jpg" class="popimg">Steak, Mash Potatoes, & Bacon Green Beans</a></h5>
-                                <small>JGwyn's Kitchen</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mobile-margin-15px-bottom">
-                    <div class="portfolio-block position-relative overflow-hidden">
-                        <img src="img/portfolio/04.jpg" alt="" />
-                        <div class="detail">
-                            <div class="content">
-                                <h5><a href="img/portfolio/04.jpg" class="popimg">Yummy Gumbo</a></h5>
-                                <small>Lenthi Miloler</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mobile-margin-15px-bottom">
-                    <div class="portfolio-block position-relative overflow-hidden">
-                        <img src="img/portfolio/05.jpg" alt="" />
-                        <div class="detail">
-                            <div class="content">
-                                <h5><a href="img/portfolio/05.jpg" class="popimg">Happy Clients!</a></h5>
-                                <small>JGwyn's Kitchen</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="portfolio-block position-relative overflow-hidden">
-                        <img src="img/portfolio/06.jpg" alt="" />
-                        <div class="detail">
-                            <div class="content">
-                                <h5><a href="img/portfolio/06.jpg" class="popimg">Cheescake!</a></h5>
-                                <small>Buckle Giarza</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end portfolio section -->
+    <!-- end blog section -->
 
     <!--  start footer section -->
-    <footer>
+    <footer class="no-padding-top">
+      <div class="footer-top-bar margin-50px-bottom sm-margin-30px-bottom">
         <div class="container">
-            <div class="row">
-
-                <div class="col-sm-6 col-lg-4 sm-margin-40px-bottom mobile-margin-30px-bottom">
-                    <ul class="contact-list">
-                        <li>Contact Us:</li>
-                        <!-- <li>(+1) 770 999 9999</li> -->
-                    </ul>
-                    <!-- <address class="width-85">PO Box 16815, Smyrna, GA</address> -->
-                    <ul class="contact-list">
-                        <li><a href="mailto:info@indiechef.io" style="color: white;">info@indiechef.io</a></li>
-                        <!-- <li>(+1) 770 999 9999</li> -->
-                    </ul>
-
-                    <div class="footer-social">
-                        <ul>
-                            <li><a href="https://instagram.com/indiechef.io" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://twitter.com/indiechef_" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://facebook.com/indiechef.io" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                        </ul>
-                    </div>
-
+          <div class="row">
+            <div class="col-lg-4">
+              <div
+                class="padding-30px-all sm-padding-25px-tb sm-no-padding-lr border-right border-color-light-white sm-no-border-right sm-border-bottom"
+              >
+                <span
+                  class="d-inline-block font-size36 line-height-30 sm-font-size32 sm-line-height-30 text-light-gray vertical-align-top width-40px"
+                >
+                  <i class="fas fa-envelope vertical-align-top"></i>
+                </span>
+                <div
+                  class="d-inline-block vertical-align-top padding-10px-left width-75"
+                >
+                  <h5 class="no-margin text-white text-uppercase font-size15">
+                    Contact IndieChef
+                  </h5>
+                  <p class="no-margin line-height-normal">
+                    Send us a message
+                    <a
+                      style="font-weight: 800; color: #228b22 !important"
+                      href="#!"
+                      data-scroll-nav="6"
+                      >here</a
+                    >
+                  </p>
                 </div>
-
-                <div class="col-sm-6 col-lg-2 sm-margin-40px-bottom mobile-margin-30px-bottom"></div>
-
-                <div class="col-sm-6 col-lg-2 mobile-margin-30px-bottom"></div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="padding-30px-left sm-no-padding-left">
-                        <div class="margin-20px-top">
-                            <img src="img/logo-light.png" class="width-180px" alt="Crizal - Onepage Business Template" title="Crizal - Onepage Business Template">
-                        </div>
-                        <p class="text-white margin-15px-top font-size14">&copy;
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> Powered By IndieChef</p>
-                    </div>
-                </div>
-
+              </div>
             </div>
+            <div class="col-lg-4">
+              <div
+                class="padding-30px-all sm-padding-25px-tb sm-no-padding-lr border-right border-color-light-white sm-no-border-right sm-border-bottom"
+              >
+                <span
+                  class="d-inline-block font-size36 line-height-30 sm-font-size32 sm-line-height-30 text-light-gray vertical-align-top width-40px"
+                >
+                  <i class="fas fa-file-alt vertical-align-top"></i>
+                </span>
+                <div
+                  class="d-inline-block vertical-align-top padding-10px-left width-75"
+                >
+                  <h5 class="no-margin text-white text-uppercase font-size15">
+                    Privacy Policy
+                  </h5>
+                  <p class="no-margin line-height-normal">
+                    Privacy &amp; Terms
+                    <a
+                      target="_blank"
+                      style="font-weight: 800; color: #228b22 !important"
+                      href="/privacy.html"
+                      >here</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="padding-30px-all sm-padding-25px-tb sm-no-padding-lr">
+                <span
+                  class="d-inline-block font-size36 line-height-30 sm-font-size32 sm-line-height-30 text-light-gray vertical-align-top width-40px"
+                >
+                  <i class="fas fa-utensils vertical-align-top"></i>
+                </span>
+                <div
+                  class="d-inline-block vertical-align-top padding-10px-left width-75"
+                >
+                  <h5 class="no-margin text-white text-uppercase font-size15">
+                    Already an IndieChef?
+                  </h5>
+                  <p class="no-margin line-height-normal">
+                    Sign in
+                    <a
+                      target="_blank"
+                      style="font-weight: 800; color: #228b22 !important"
+                      href="https://app.indiechef.io/users/sign_in"
+                      target="_blank"
+                      >here</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
+            <a target="_blank" href="#!" data-scroll-nav="0"
+              ><img
+                style="height: 46px"
+                src="https://assets.indiechef.io/site/img/logo-white.png"
+            /></a>
+            <p class="margin-25px-top margin-20px-bottom">
+              IndieChef is a simple & easy platform for independent chefs to
+              create menus, allow customers to order items, and fulfill orders.
+            </p>
+            <ul class="footer-list">
+              <li>
+                <span class="d-inline-block vertical-align-top font-size18">
+                  <i class="fas fa-map-marker-alt text-theme-color"></i>
+                </span>
+                <span
+                  class="d-inline-block width-85 vertical-align-top padding-10px-left"
+                  >Atlanta, GA</span
+                >
+              </li>
+              <li>
+                <span class="d-inline-block vertical-align-top font-size18">
+                  <i class="far fa-envelope text-theme-color"></i>
+                </span>
+                <span
+                  class="d-inline-block width-85 vertical-align-top padding-10px-left"
+                  >info@indiechef.io</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
+            <h3 class="footer-title-style2 text-white">Quick Links</h3>
+            <div class="row">
+              <div class="col-md-6 no-padding-right xs-padding-15px-right">
+                <ul class="footer-list xs-margin-5px-bottom">
+                  <li><a href="#!" data-scroll-nav="0">Home</a></li>
+                  <li><a href="#!" data-scroll-nav="1">Find a Chef</a></li>
+                  <li><a href="#!" data-scroll-nav="2">How It Works</a></li>
+                  <li>
+                    <a
+                      href="https://app.indiechef.io/users/sign_up"
+                      target="_blank"
+                      >Start Free</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 no-padding-right xs-padding-15px-right">
+                <ul class="footer-list">
+                  <li><a href="#!" data-scroll-nav="3">About</a></li>
+                  <li><a href="#!" data-scroll-nav="4">Pricing</a></li>
+                  <li><a href="#!" data-scroll-nav="6">Contact</a></li>
+                  <li>
+                    <a
+                      href="https://app.indiechef.io/users/sign_in"
+                      target="_blank"
+                      >Sign In</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="padding-30px-left sm-no-padding-left">
+              <h3 class="footer-title-style2 text-white">
+                Keep up with IndieChef
+              </h3>
+              <p class="margin-20px-bottom">
+                We send out periodical updates to our customers. Enter your
+                email to sign up for promotional emails and special deals!
+              </p>
+              <form
+                action=""
+                class="newsletter-form w-sm-90 mx-auto mx-lg-0"
+                enctype="multipart/form-data"
+                method="post"
+                onclick=""
+              >
+                <div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div>
+                        <div>
+                          <input
+                            class="form-control"
+                            id="email_address"
+                            name="email_address"
+                            placeholder="Enter your email here..."
+                            type="text"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="quform-submit-inner">
+                        <button
+                          class="btn btn-white text-theme-color m-0"
+                          type="submit"
+                        >
+                          <i class="fas fa-paper-plane"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-left xs-text-center xs-margin-5px-bottom">
+              <div class="footer-social-icons small">
+                <ul>
+                  <li class="footer-facebook">
+                    <a
+                      target="blank"
+                      href="https://www.facebook.com/IndieChef.io"
+                      ><i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="blank" href="https://twitter.com/indiechef_"
+                      ><i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="blank" href="https://instagram.com/indiechef.io"
+                      ><i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 text-right xs-text-center">
+              <p class="xs-margin-5px-top xs-font-size13">
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Powered by IndieChef
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- end footer section -->
 
     <!-- start scroll to top -->
-    <a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+    <a href="#!" class="scroll-to-top"
+      ><i class="fas fa-angle-up" aria-hidden="true"></i
+    ></a>
     <!-- end scroll to top -->
 
     <!-- all js include start -->
@@ -477,14 +1176,14 @@
     <!-- scrollIt -->
     <script src="js/scrollIt.min.js"></script>
 
+    <!-- tab -->
+    <script src="js/easy.responsive.tabs.js"></script>
+
     <!-- owl carousel -->
     <script src="js/owl.carousel.js"></script>
 
     <!-- jquery.counterup.min -->
     <script src="js/jquery.counterup.min.js"></script>
-
-    <!-- jquery.magnific-popup js -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
 
     <!-- stellar js -->
     <script src="js/jquery.stellar.min.js"></script>
@@ -492,20 +1191,49 @@
     <!-- waypoints js -->
     <script src="js/waypoints.min.js"></script>
 
+    <!-- revolution slider js files start -->
+    <script src="js/rev_slider/jquery.themepunch.tools.min.js"></script>
+    <script src="js/rev_slider/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- revolution typewriter addon -->
+    <script src="js/rev_slider/extensions/revolution.addon.typewriter.min.js"></script>
+
+    <script src="js/rev_slider/extensions/revolution.extension.actions.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.migration.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.video.min.js"></script>
+
     <!-- custom scripts -->
     <script src="js/main.js"></script>
 
     <!-- all js include end -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173634635-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-173634635-1');
+      function onContactSubmit(token) {
+        $("#contact-us-submit-button-container").html("");
+        var form = $("#contact-us-form");
+        var url = form.attr("action");
+        var data = form.serialize();
+        // TODO: check vars
+        $.ajax(
+          {
+            type: "POST",
+            url: url,
+            data: data,
+            success: function (data) {
+              $("#contact-us-submit-button-container").html(
+                "<h6 class='text-theme-color'>Email successfully sent!</h6>"
+              );
+            },
+          },
+          "json"
+        );
+      }
     </script>
-
-</body>
-
+  </body>
 </html>

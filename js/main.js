@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Crizal - Onepage Business Template
-    Description: Onepage Business Template
+    Theme Name: Crizal - Onepage Consulting Template
+    Description: Onepage Consulting Template
     Author: Chitrakoot Web
 
     /* ----------------------------------
@@ -14,13 +14,11 @@
         04. Sidemenu toggle
         05. Navbar scrolling background
         06. Parallax
-        07. Magnific-popup
-        08. Popup Youtube
-        10. OurstoryPopup
-        09. Countup
-        10. Window When Loading
-        11. FullScreenHeight Resize function
-        12. OwlCarousel Slider
+        07. Horizontal Tab
+        08. Countup
+        09. Window When Loading
+        10. FullScreenHeight Resize function
+        11. OwlCarousel Slider
         
     ---------------------------------- */
 
@@ -28,6 +26,24 @@ $(function () {
   "use strict";
 
   var wind = $(window);
+
+  wind.on("scroll", function () {
+    var bodyScroll = wind.scrollTop(),
+      navbar = $(".navbar"),
+      navbloglogo = $(".blog-nav .logo> img"),
+      darkbg = $(".bg-black .logo> img"),
+      logo = $(".navbar .logo> img");
+
+    if (bodyScroll > 100) {
+      navbar.addClass("nav-scroll");
+      logo.attr("src", "https://assets.indiechef.io/site/img/logo.png");
+      darkbg.attr("src", "https://assets.indiechef.io/site/img/logo-white.png");
+    } else {
+      navbar.removeClass("nav-scroll");
+      logo.attr("src", "https://assets.indiechef.io/site/img/logo-white.png");
+      navbloglogo.attr("src", "https://assets.indiechef.io/site/img/logo.png");
+    }
+  });
 
   /*------------------------------------
             01. Preloader
@@ -102,19 +118,12 @@ $(function () {
 
   wind.on("scroll", function () {
     var bodyScroll = wind.scrollTop(),
-      navbar = $(".navbar"),
-      navbloglogo = $(".blog-nav .logo> img"),
-      darkbg = $(".bg-black .logo> img"),
-      logo = $(".navbar .logo> img");
+      navbar = $(".navbar");
 
     if (bodyScroll > 100) {
       navbar.addClass("nav-scroll");
-      logo.attr("src", "img/logo-dark.png");
-      darkbg.attr("src", "img/logo-light.png");
     } else {
       navbar.removeClass("nav-scroll");
-      logo.attr("src", "img/logo-light.png");
-      navbloglogo.attr("src", "img/logo-dark.png");
     }
   });
 
@@ -141,32 +150,28 @@ $(function () {
   });
 
   /*------------------------------------
-            07. Magnific-popup
+            07. Horizontal Tab
         --------------------------------------*/
 
-  $(".gallery").magnificPopup({
-    delegate: ".popimg",
-    type: "image",
-    gallery: {
-      enabled: true,
-    },
-  });
+  if ($(".horizontaltab").length !== 0) {
+    $(".horizontaltab").easyResponsiveTabs({
+      type: "default", //Types: default, vertical, accordion
+      width: "auto", //auto or any width like 600px
+      fit: true, // 100% fit in a container
+      tabidentify: "hor_1", // The tab groups identifier
+      activate: function (event) {
+        // Callback function if tab is switched
+        var $tab = $(this);
+        var $info = $("#nested-tabInfo");
+        var $name = $("span", $info);
+        $name.text($tab.text());
+        $info.show();
+      },
+    });
+  }
 
   /*------------------------------------
-            08. Popup Youtube
-        --------------------------------------*/
-
-  $(".popup-youtube").magnificPopup({
-    disableOn: 700,
-    type: "iframe",
-    mainClass: "mfp-fade",
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false,
-  });
-
-  /*------------------------------------
-            09. Countup
+            08. Countup
         --------------------------------------*/
 
   $(".countup").counterUp({
@@ -175,7 +180,7 @@ $(function () {
   });
 
   /*------------------------------------
-            10. Window When Loading
+            09. Window When Loading
         --------------------------------------*/
 
   $(window).on("load", function () {
@@ -186,7 +191,7 @@ $(function () {
   });
 
   /*------------------------------------
-            11. FullScreenHeight Resize function
+            10. FullScreenHeight Resize function
         --------------------------------------*/
 
   $(window).resize(function (event) {
@@ -211,62 +216,105 @@ $(function () {
   SetResizeContent();
 
   /*------------------------------------
-            12. OwlCarousel Slider
+            11. OwlCarousel Slider
         --------------------------------------*/
 
   $(document).ready(function () {
+    // Revolution video
+    if ($("#rev_slider_1014_1").length !== 0) {
+      var tpj = jQuery;
+      var revapi1014;
+      tpj(document).ready(function () {
+        if (tpj("#rev_slider_1014_1").revolution == undefined) {
+          revslider_showDoubleJqueryError("#rev_slider_1014_1");
+        } else {
+          revapi1014 = tpj("#rev_slider_1014_1")
+            .show()
+            .revolution({
+              sliderType: "standard",
+              jsFileLocation: "revolution/js/",
+              sliderLayout: "fullscreen",
+              dottedOverlay: "none",
+              delay: 9000,
+              navigation: {
+                keyboardNavigation: "off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation: "off",
+                mouseScrollReverse: "default",
+                onHoverStop: "off",
+                touch: {
+                  touchenabled: "on",
+                  swipe_threshold: 75,
+                  swipe_min_touches: 1,
+                  swipe_direction: "horizontal",
+                  drag_block_vertical: false,
+                },
+                arrows: {
+                  style: "uranus",
+                  enable: false,
+                  hide_onmobile: true,
+                  hide_under: 768,
+                  hide_onleave: false,
+                  tmp: "",
+                  left: {
+                    h_align: "left",
+                    v_align: "center",
+                    h_offset: 20,
+                    v_offset: 0,
+                  },
+                  right: {
+                    h_align: "right",
+                    v_align: "center",
+                    h_offset: 20,
+                    v_offset: 0,
+                  },
+                },
+              },
+              responsiveLevels: [1240, 1024, 778, 480],
+              visibilityLevels: [1240, 1024, 778, 480],
+              gridwidth: [1240, 1024, 778, 480],
+              gridheight: [868, 768, 960, 600],
+              lazyType: "none",
+              shadow: 0,
+              spinner: "off",
+              stopLoop: "on",
+              stopAfterLoops: 0,
+              stopAtSlide: 1,
+              shuffle: "off",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              disableProgressBar: "on",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                simplifyAll: "off",
+                nextSlideOnWindowFocus: "off",
+                disableFocusListener: false,
+              },
+            });
+        }
+        RsTypewriterAddOn(tpj, revapi1014);
+      }); /*ready*/
+    }
+
     var owl = $(".header .owl-carousel");
 
-    // Clients carousel
-    $("#clients").owlCarousel({
-      loop: true,
-      nav: false,
-      dots: false,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      responsiveClass: true,
-      autoplayHoverPause: false,
-      responsive: {
-        0: {
-          items: 2,
-          margin: 20,
-        },
-        768: {
-          items: 3,
-          margin: 40,
-        },
-        992: {
-          items: 4,
-          margin: 60,
-        },
-        1200: {
-          items: 5,
-          margin: 80,
-        },
-      },
-    });
-
-    // testimonial-slider owlCarousel
-    $(".testimonial-slider .owl-carousel").owlCarousel({
+    // testimonial owlCarousel
+    $(".testimonial .owl-carousel").owlCarousel({
       loop: true,
       margin: 0,
-      autoplay: false,
-      dots: false,
-      nav: true,
+      autoplay: true,
+      dots: true,
+      nav: false,
       navText: ["<i class='arrow'></i>", "<i class='arrow'></i>"],
-      smartSpeed: 500,
-      responsive: {
-        0: {
-          items: 1,
-          autoplay: true,
-        },
-        768: {
-          items: 1,
-        },
-        992: {
-          items: 1,
-        },
-      },
+      smartSpeed: 800,
+      items: 1,
     });
 
     // Default owlCarousel
@@ -279,18 +327,18 @@ $(function () {
     });
   });
 
-  // Header images
-  var backgrounds = ["img/banner-1.jpg", "img/banner-4.jpg", "img/banner-5.jpg", "img/banner-2.jpg", "img/banner-3.jpg"];
-  var current = 0;
+  $("#find-chef-form").submit(function(e){
+    return false;
+  });
 
-  function nextBackground() {
-    $('#header').css(
-        "background-image",
-        "url(" + backgrounds[(current = ++current % backgrounds.length)] + ")"
-      );
-
-    setTimeout(nextBackground, 7000);
-  }
-  
-  setTimeout(nextBackground, 7000);
+  $(document).ready(function () {
+    $('#find-chef-button').click(function() {
+      const zip = $('#find-chef-zip').val();
+      if (zip) {
+        window.location = 'http://app.indiechef.io/shop/chefs/' + zip;
+      } else {
+        $('#find-chef-zip').css('border-color', 'red');
+      }
+    });
+  });
 });
