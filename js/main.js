@@ -335,7 +335,7 @@ $(function () {
     $('#find-chef-button').click(function() {
       const zip = $('#find-chef-zip').val();
       if (zip) {
-        window.location = 'http://app.indiechef.io/shop/chefs/' + zip;
+        window.location = 'http://app.indiechef.io/marketplace/' + zip;
       } else {
         $('#find-chef-zip').css('border-color', 'red');
       }
