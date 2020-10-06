@@ -2511,24 +2511,39 @@ footer .footer-icon3 ul li a:hover {
     color: #282b2d;
     text-decoration: none; }
 
-    .feature-box-05 {
-      box-shadow: 0px 5px 24px 6px rgba(0, 0, 0, 0.06);
-    }
-    .feature-box-05 .features-icon {
-      font-size: 45px;
-      color: #2a8ae2;
-      text-align: center;
-    }
-    
-    @media screen and (max-width: 1199px) {
-      .feature-box-05 .features-icon {
-        font-size: 40px;
-      }
-    }
-    @media screen and (max-width: 991px) {
-      .feature-box-05 .features-icon {
-        font-size: 30px;
-      }
-    }
+.feature-box-05 {
+  box-shadow: 0px 5px 24px 6px rgba(0, 0, 0, 0.06);
+}
+.feature-box-05 .features-icon {
+  font-size: 45px;
+  color: #2a8ae2;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .feature-box-05 .features-icon {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .feature-box-05 .features-icon {
+    font-size: 30px;
+  }
+}
+
+.testimonial-style8 p {
+  font-style: italic;
+  letter-spacing: 1px; }
+  .testimonial-style8 p:before {
+    margin-right: 20px;
+    content: "\f10d";
+    font-weight: 700;
+    font-family: Font Awesome\ 5 Free;
+    color: #228B22;
+    font-size: 23px; }
+
+@media screen and (max-width: 767px) {
+  .testimonial-style8 h6 {
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
