@@ -2547,3 +2547,10 @@ footer .footer-icon3 ul li a:hover {
     margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.header .caption h1 {
+  font-size: 52px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+}
