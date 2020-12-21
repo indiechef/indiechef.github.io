@@ -79,7 +79,12 @@ ul li { list-style: none; }
 ====================================== */
 
 /* font family */
-.alt-font {font-family: 'Montserrat', sans-serif; font-weight: 500;}
+@font-face {
+    font-family: 'Studly';
+    src: url('../../fonts/studly-regular.otf') format('opentype'),
+         url('../../fonts/studly-regular.ttf')  format('truetype');
+  }
+.alt-font {font-family: 'Studly', sans-serif; font-weight: 500;}
 .main-font {font-family: 'Open Sans', sans-serif;}
 
 /* heading */
